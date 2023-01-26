@@ -1,0 +1,18 @@
+/* --------------------------------------------
+This module supports the header style.
+-------------------------------------------- */
+@import '../styles/CommonStyle.scss';
+
+/* All sizes */
+.header {
+  width: 100vw;
+  height: 10vh;
+  background: $last-color;
+  .poke-image {
+    width: 100vw;
+    @include center-content;
+    img {
+      margin-top: 30px;
+    }
+  }
+}

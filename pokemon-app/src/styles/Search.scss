@@ -1,0 +1,84 @@
+/* --------------------------------------------
+This module supports the Search style.
+-------------------------------------------- */
+@import '../styles/CommonStyle.scss';
+
+/* All sizes */
+* {
+  font-family: $primary-font, sans-serif;
+}
+h4 {
+  margin: 0;
+  font-size: 2vw;
+  color: $third-color;
+}
+p {
+  font-size: 1.5vw;
+  margin-bottom: 0;
+}
+.searchBar input {
+  margin-top: 10px;
+  width: 30vw;
+  height: 4vh;
+  border: none;
+  background: $primary-color;
+  box-shadow: $box-shadow;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 1.5vw;
+}
+.search-btn button {
+  width: 15vw;
+  height: 6vh;
+  margin: 10px;
+  background: $second-color;
+  box-shadow: $box-shadow;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.5vw;
+}
+/* Phone size */
+@media screen and (min-width: 360px) and (max-width: 414px) {
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+  hr {
+    width: 100vw;
+    height: 2px;
+    border-bottom: 2px dashed $second-color;
+    margin-top: 10px;
+  }
+  .searchBar input {
+    width: 288px;
+    height: 25px;
+    font-size: 15px;
+  }
+  .search-btn button {
+    width: 134px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+/* PC size */
+@media screen and (min-width: 415px) {
+  .search-container {
+    width: 100vw;
+    .left {
+      float: left;
+      width: 45vw;
+      height: auto;
+    }
+    .right {
+      @include center-content;
+      float: right;
+      width: 45vw;
+      height: auto;
+      margin: 30vh 0;
+      border-left: 2px dashed $second-color;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+/* --------------------------------------------
+This module supports the footer style.
+-------------------------------------------- */
+@import '../styles/CommonStyle.scss';
+
+/* All sizes */
+.footer {
+  width: 100vw;
+  height: 5vh;
+  background: $last-color;
+  position: absolute;
+  bottom: 0;
+  p {
+    text-align: center;
+    margin: 5px;
+  }
+}
+/* PC size */
+@media screen and (min-width: 415px) {
+  .footer {
+    p {
+      font-size: large;
+    }
+  }
+}

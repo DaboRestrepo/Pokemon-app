@@ -1,0 +1,86 @@
+/* --------------------------------------------
+This module supports the PokeInfo style.
+-------------------------------------------- */
+@import '../styles/CommonStyle.scss';
+
+/* All sizes */
+.pokemon-name {
+  text-align: center;
+  h3 {
+    margin: 10px;
+    font-size: 2.5vw;
+    color: $third-color;
+    text-transform: capitalize;
+    font-family: $primary-font;
+  }
+}
+/* Phone size */
+@media screen and (min-width: 360px) and (max-width: 414px) {
+  div {
+    @include center-content;
+    .pokemon-img {
+      width: 180px;
+      height: 180px;
+      background: $primary-color;
+      border-radius: 50%;
+      margin-top: 60px;
+      img {
+        width: 100%;
+      }
+    }
+    .pokemon-name h3 {
+      font-size: 30px;
+    }
+    .pokemon-card {
+      background: $primary-color;
+      width: 85vw;
+      border-radius: 7px;
+      box-shadow: $box-shadow;
+      font-family: $primary-font;
+      font-size: 16px;
+      ul {
+        list-style: none;
+        padding: 0;
+        li .mapName {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+/* PC size */
+@media screen and (min-width: 415px) {
+  .card-container {
+    @include center-content;
+    width: 50vw;
+    height: 90vh;
+    margin: 0;
+    .pokemon-img {
+      width: 15vw;
+      height: 15vw;
+      background: $primary-color;
+      border-radius: 50%;
+      top: 10vw;
+      img {
+        width: 100%;
+      }
+    }
+    .pokemon-card {
+      background: $primary-color;
+      width: 30vw;
+      border-radius: 7px;
+      box-shadow: $box-shadow;
+      font-family: $primary-font;
+      font-size: 1.4vw;
+      text-align: left;
+      ul {
+        list-style: none;
+        padding: auto;
+
+        li .mapName {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
