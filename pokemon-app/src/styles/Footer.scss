@@ -8,8 +8,8 @@ This module supports the footer style.
   width: 100vw;
   height: 5vh;
   background: $last-color;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  bottom: 0vh;
   p {
     text-align: center;
     margin: 5px;
@@ -18,8 +18,9 @@ This module supports the footer style.
 /* PC size */
 @media screen and (min-width: 415px) {
   .footer {
+    position: absolute;
     p {
-      font-size: large;
+      font-size: 1.2vw;
     }
   }
 }

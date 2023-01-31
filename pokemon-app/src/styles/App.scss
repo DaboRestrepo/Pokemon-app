@@ -3,3 +3,9 @@ html {
   background: #D4D4D4;
   overflow: hidden;
 }
+
+@media screen and (min-width: 360px) and (max-width: 414px) {
+  html {
+    overflow: scroll;
+  }
+}
